@@ -28,3 +28,40 @@
 	margin-top: 30px;
 	letter-spacing: 2px;
 }
+
+// new.html.erb　始
+.form-control {
+	height: 45px;
+}
+
+.users-new-wrapper {
+	margin-top: 60px;
+	
+	h1 {
+		margin-bottom: 35px;
+	}
+	
+	.users-new-container {
+		margin: auto;
+	}
+	
+	.form-group {
+		margin-bottom: 25px;
+	}
+	
+}
+
+
+.btn-block {
+	color: black;
+	border: 1px solid #565656;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.1);
+	
+	&:hover {
+		color: black;
+		background-color: rgba(0,0,0,0.3);
+	}
+}

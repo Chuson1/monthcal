@@ -16,6 +16,18 @@
   </head>
 
   <body>
+    <div class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+    		<%= link_to root_path do %>
+        	<span><%= image_tag "monthcal.png", class: "navbar-brand" %></span>
+        <% end %>
+        <ul class="nav ul-list">
+        	<li>アカウント作成</li>
+        	<li>ログイン</li>
+        	<li>マイスケジュール</li>
+        </ul>
+    	</div>
+    </div>
     <%= yield %>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
