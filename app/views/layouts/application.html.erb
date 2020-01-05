@@ -22,9 +22,15 @@
         	<span><%= image_tag "monthcal.png", class: "navbar-brand" %></span>
         <% end %>
         <ul class="nav ul-list">
-        	<li>アカウント作成</li>
-        	<li>ログイン</li>
-        	<li>マイスケジュール</li>
+        	<li>
+        	  <%= link_to 'アカウント作成', new_user_path %>
+      	  </li>
+        	<li>
+        	  <%= link_to 'ログイン', '#' %>
+      	  </li>
+        	<li>
+        	  <%= link_to 'マイスケジュール', '#' %>
+        	</li>
         </ul>
     	</div>
     </div>
