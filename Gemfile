@@ -76,8 +76,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Add to gem 2019/12/12
+
 gem 'jquery-rails'
-# Add to gem 2019/12/15
+# Use ActiveModel has_secure_password
 gem 'bcrypt'
 gem 'carrierwave'
