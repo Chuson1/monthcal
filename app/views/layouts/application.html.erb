@@ -25,11 +25,14 @@
           <% if logged_in? %>
             <span>現在のcurrent_user.idは<%= @current_user.id %></span>
             <li>
-              <%= link_to 'ログアウト', logout_path, method: :delete %>
-            </li>
+          	  <%= link_to @current_user.name, "/users/#{@current_user.id}" %>
+          	</li>
             <li>
           	  <%= link_to 'マイスケジュール', '#' %>
           	</li>
+          	<li>
+              <%= link_to 'ログアウト', logout_path, method: :delete %>
+            </li>
           <% else %>
           	<li>
           	  <%= link_to 'アカウント作成', new_user_path %>
