@@ -1,0 +1,11 @@
+<div class="container">
+  <%= month_calendar events: @schedules do |date, schedules| %>
+    <%= link_to date, new_schedule_path %>
+  
+    <% schedules.each do |schedule| %>
+      <div>
+        <%= schedule.name %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
