@@ -23,7 +23,6 @@
         <% end %>
         <ul class="nav ul-list">
           <% if logged_in? %>
-            <span>現在のcurrent_user.idは<%= @current_user.id %></span>
             <li>
           	  <%= link_to @current_user.name, "/users/#{@current_user.id}" %>
           	</li>

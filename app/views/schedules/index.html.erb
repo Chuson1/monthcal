@@ -1,6 +1,6 @@
 <div class="container">
   <%= month_calendar events: @schedules do |date, schedules| %>
-    <%= link_to date, new_schedule_path %>
+    <%= date %>
   
     <% schedules.each do |schedule| %>
       <div>
@@ -8,4 +8,5 @@
       </div>
     <% end %>
   <% end %>
+  <%= link_to '予定を入れる', new_schedule_path, class: "btn btn-primary" %>
 </div>
