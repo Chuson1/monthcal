@@ -6,7 +6,6 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.3.6'
 # gem 'mysql2', group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
@@ -46,7 +45,7 @@ group :development, :test do
   # ここから下が追加分
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
-  
+  gem 'sqlite3', '~> 1.3.6'
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
