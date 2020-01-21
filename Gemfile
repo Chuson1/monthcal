@@ -45,7 +45,6 @@ group :development, :test do
   # ここから下が追加分
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
-  
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
