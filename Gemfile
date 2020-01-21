@@ -6,7 +6,8 @@ ruby '2.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'mysql2', group: :development
+gem 'sqlite3', '~> 1.3.6'
+# gem 'mysql2', group: :development
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -45,6 +46,7 @@ group :development, :test do
   # ここから下が追加分
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
+  
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
@@ -62,7 +64,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'sqlite3', '~> 1.3.6'
+  
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
